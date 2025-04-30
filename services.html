@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cancer Care Clinic - Services</title>
+    <title>Our Services - Cancer Care Clinic</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,6 +20,12 @@
                 <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="why-us.html">Why Us?</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li class="lang-selector">
+                    <select id="headerLangSelect" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ur">اردو</option>
+                    </select>
+                </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -30,90 +37,105 @@
 
     <main>
         <section class="services-hero">
-            <div class="services-hero-content">
+            <div class="hero-content">
                 <h1>Our Services</h1>
-                <p>Comprehensive cancer care services tailored to your needs</p>
+                <p>Empowering Cancer Patients in Pakistan with Global Expertise, Local Compassion</p>
             </div>
         </section>
 
         <section class="services-content">
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="https://placehold.co/800x400/3498db/ffffff?text=Chemotherapy" alt="Chemotherapy">
-                    <div class="service-info">
-                        <h3>Chemotherapy</h3>
-                        <p>Advanced chemotherapy treatments using the latest medications and protocols to target cancer cells effectively while minimizing side effects.</p>
-                        <ul>
-                            <li>Intravenous chemotherapy</li>
-                            <li>Oral chemotherapy</li>
-                            <li>Targeted therapy</li>
-                            <li>Immunotherapy</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <img src="https://placehold.co/800x400/3498db/ffffff?text=Radiation+Therapy" alt="Radiation Therapy">
-                    <div class="service-info">
-                        <h3>Radiation Therapy</h3>
-                        <p>State-of-the-art radiation therapy using advanced technology to precisely target tumors while protecting healthy tissue.</p>
-                        <ul>
-                            <li>External beam radiation</li>
-                            <li>Brachytherapy</li>
-                            <li>Stereotactic radiosurgery</li>
-                            <li>Proton therapy</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <img src="https://placehold.co/800x400/3498db/ffffff?text=Surgical+Oncology" alt="Surgical Oncology">
-                    <div class="service-info">
-                        <h3>Surgical Oncology</h3>
-                        <p>Expert surgical care for various types of cancer, performed by experienced surgical oncologists.</p>
-                        <ul>
-                            <li>Minimally invasive surgery</li>
-                            <li>Robotic-assisted surgery</li>
-                            <li>Reconstructive surgery</li>
-                            <li>Palliative surgery</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <img src="https://placehold.co/800x400/3498db/ffffff?text=Support+Services" alt="Support Services">
-                    <div class="service-info">
-                        <h3>Support Services</h3>
-                        <p>Comprehensive support services to help patients and their families throughout their cancer journey.</p>
-                        <ul>
-                            <li>Nutrition counseling</li>
-                            <li>Psychological support</li>
-                            <li>Pain management</li>
-                            <li>Rehabilitation services</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="intro">
+                <p>At Cancer Care Clinic, led by Dr. Saeed ur Rehman (Specialty Doctor in Medical Oncology, James Cook University Hospital, UK), we deliver world-class virtual cancer care stratified to your needs. Our services bridge the gap between advanced international standards and accessible care in Pakistan.</p>
             </div>
 
-            <div class="additional-services">
-                <h2>Additional Services</h2>
-                <div class="additional-grid">
-                    <div class="additional-card">
-                        <i class="fas fa-microscope"></i>
-                        <h3>Diagnostic Services</h3>
-                        <p>Advanced imaging and laboratory services for accurate cancer diagnosis</p>
-                    </div>
-                    <div class="additional-card">
-                        <i class="fas fa-dna"></i>
-                        <h3>Genetic Testing</h3>
-                        <p>Comprehensive genetic testing and counseling services</p>
-                    </div>
-                    <div class="additional-card">
-                        <i class="fas fa-pills"></i>
-                        <h3>Clinical Trials</h3>
-                        <p>Access to cutting-edge clinical trials and research studies</p>
-                    </div>
-                </div>
+            <div class="service-section">
+                <h2>1. Virtual Oncology Consultations</h2>
+                <h3>Expert Guidance from Anywhere in Pakistan</h3>
+                <ul>
+                    <li>
+                        <strong>Comprehensive Diagnosis & Staging:</strong>
+                        <p>Accurate evaluation using imaging, lab results, and clinical history, aligned with global protocols (e.g., TNM staging).</p>
+                    </li>
+                    <li>
+                        <strong>Personalized Treatment Plans:</strong>
+                        <p>Tailored strategies for chemotherapy, immunotherapy, targeted therapy, or radiation, based on the latest evidence and your unique condition.</p>
+                    </li>
+                    <li>
+                        <strong>Specialized Focus:</strong>
+                        <p>Expertise in lung, breast, gastroesophageal, liver, pancreatic, colon, and genitourinary cancers.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="service-section">
+                <h2>2. Detailed Medical Reports</h2>
+                <h3>Your Roadmap to Local Treatment</h3>
+                <ul>
+                    <li>
+                        <strong>Actionable Documentation:</strong>
+                        <p>Receive clear, jargon-free reports for your local healthcare team, including:</p>
+                        <ul>
+                            <li>Diagnosis and stage confirmation</li>
+                            <li>Recommended treatment protocols (drug regimens, dosages, cycles)</li>
+                            <li>Referrals to trusted oncologists/hospitals in Pakistan</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Global Standards, Local Relevance:</strong>
+                        <p>We adapt international guidelines (e.g., NHS, ESMO) to ensure compatibility with Pakistani healthcare resources.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="service-section">
+                <h2>3. Second Opinions</h2>
+                <h3>Clarity in Uncertainty</h3>
+                <ul>
+                    <li>Review your current diagnosis or treatment plan</li>
+                    <li>Get answers to critical questions:
+                        <ul>
+                            <li>Is my diagnosis accurate?</li>
+                            <li>Are there newer or less toxic treatment options?</li>
+                            <li>What clinical trials might I qualify for?</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="service-section">
+                <h2>4. Advanced Care Planning</h2>
+                <h3>Long-Term Support for You and Your Family</h3>
+                <ul>
+                    <li>
+                        <strong>Follow-Up & Monitoring:</strong>
+                        <p>Custom schedules for scans, blood tests, and symptom management.</p>
+                    </li>
+                    <li>
+                        <strong>Palliative Care Guidance:</strong>
+                        <p>Improve quality of life with pain management and emotional support strategies.</p>
+                    </li>
+                    <li>
+                        <strong>Prognosis Education:</strong>
+                        <p>Honest, compassionate discussions about what to expect at every stage.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="service-section">
+                <h2>5. Multidisciplinary Collaboration</h2>
+                <h3>Seamless Care at Your Doorstep</h3>
+                <p>We partner with trusted hospitals and specialists across Pakistan to ensure:</p>
+                <ul>
+                    <li>Smooth transitions from virtual consultation to local treatment</li>
+                    <li>Affordable access to chemotherapy, radiation, or surgery</li>
+                    <li>Coordination with nutritionists, counsellors, and palliative care teams</li>
+                </ul>
+            </div>
+
+            <div class="cta-section">
+                <h2>Your Fight Is My Fight</h2>
+                <p>I founded Cancer Care Clinic to ensure no Pakistani patient has to compromise on world-class cancer care. Let me guide you with expertise, empathy, and unwavering commitment.</p>
+                <a href="contact.html" class="cta-button">Book Your Consultation Today</a>
             </div>
         </section>
     </main>
@@ -149,5 +171,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/translations.js"></script>
 </body>
 </html> 

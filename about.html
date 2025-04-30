@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cancer Care Clinic - About Us</title>
+    <title>About Us - Cancer Care Clinic</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,6 +20,12 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="why-us.html">Why Us?</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li class="lang-selector">
+                    <select id="headerLangSelect" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ur">اردو</option>
+                    </select>
+                </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -30,62 +37,62 @@
 
     <main>
         <section class="about-hero">
-            <div class="about-hero-content">
-                <h1>About Our Clinic</h1>
-                <p>Committed to providing exceptional cancer care with compassion and expertise</p>
+            <div class="hero-content">
+                <h1>About Dr. Saeed ur Rehman</h1>
+                <p>Specialist in Medical Oncology | Compassionate Cancer Care Advocate</p>
             </div>
         </section>
 
         <section class="about-content">
-            <div class="about-section">
-                <h2>Our Story</h2>
-                <p>Founded in 2010, Cancer Care Clinic has been at the forefront of providing comprehensive cancer care services. Our journey began with a simple mission: to provide accessible, high-quality cancer care to our community.</p>
-                <p>Over the years, we have grown into a leading cancer care center, combining cutting-edge technology with compassionate care to improve patient outcomes.</p>
+            <div class="current-position">
+                <h2>Current Position</h2>
+                <p>I currently serve as a Specialty Doctor in Medical Oncology at James Cook University Hospital, Middlesbrough, United Kingdom, a leading NHS trust renowned for its cutting-edge cancer care and research.</p>
             </div>
 
-            <div class="team-section">
-                <h2>Our Team</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="https://placehold.co/400x400/3498db/ffffff?text=Dr.+Sarah+Johnson" alt="Dr. Sarah Johnson">
-                        <h3>Dr. Sarah Johnson</h3>
-                        <p>Chief Oncologist</p>
-                        <p>20+ years of experience in cancer treatment</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://placehold.co/400x400/3498db/ffffff?text=Dr.+Michael+Chen" alt="Dr. Michael Chen">
-                        <h3>Dr. Michael Chen</h3>
-                        <p>Radiation Oncologist</p>
-                        <p>Specialized in advanced radiation therapy</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://placehold.co/400x400/3498db/ffffff?text=Dr.+Emily+Rodriguez" alt="Dr. Emily Rodriguez">
-                        <h3>Dr. Emily Rodriguez</h3>
-                        <p>Medical Oncologist</p>
-                        <p>Expert in chemotherapy and targeted therapy</p>
-                    </div>
-                </div>
+            <div class="professional-expertise">
+                <h2>Professional Expertise</h2>
+                <p>With over 14 years of dedicated experience in medical oncology, I specialize in diagnosing and treating a wide spectrum of cancers, with a focused interest in:</p>
+                <ul>
+                    <li>Lung Cancer</li>
+                    <li>Breast Cancer</li>
+                    <li>Gastroesophageal & Hepatocellular (Liver) Cancers</li>
+                    <li>Pancreatic & Colon Cancers</li>
+                    <li>Genitourinary Cancers (Prostate, Bladder, Kidney)</li>
+                    <li>Gynaecology cancers (Ovarian, Endometrium, cervix)</li>
+                </ul>
+                <p>My practice prioritizes evidence-based, personalized treatment plans tailored to each patient's unique needs, ensuring dignity and hope at every stage of their journey.</p>
             </div>
 
-            <div class="mission-section">
-                <h2>Our Mission</h2>
-                <div class="mission-grid">
-                    <div class="mission-card">
-                        <i class="fas fa-heart"></i>
-                        <h3>Patient-Centered Care</h3>
-                        <p>Putting patients first in every decision and treatment plan</p>
-                    </div>
-                    <div class="mission-card">
-                        <i class="fas fa-flask"></i>
-                        <h3>Research & Innovation</h3>
-                        <p>Advancing cancer treatment through research and innovation</p>
-                    </div>
-                    <div class="mission-card">
-                        <i class="fas fa-hands-helping"></i>
-                        <h3>Community Support</h3>
-                        <p>Providing support and education to our community</p>
-                    </div>
-                </div>
+            <div class="qualifications">
+                <h2>Qualifications & Credentials</h2>
+                <ul>
+                    <li>Specialty Certificate Examination (SCE) in Medical Oncology (UK)</li>
+                    <li>Saudi Fellowship in Medical Oncology</li>
+                    <li>MRCP(UK)– Royal College of Physicians, UK</li>
+                    <li>MRCPI – Royal College of Physicians of Ireland</li>
+                    <li>FCPS(Medicine)- College of Physician and Surgeon, Pakistan</li>
+                    <li>PMDC registered</li>
+                </ul>
+            </div>
+
+            <div class="mission">
+                <h2>Why I Founded Virtual Cancer Care Clinic</h2>
+                <p>While working in the UK's advanced healthcare system, I recognized the urgent need to extend world-class oncology expertise to patients in Pakistan. Through Cancer Care Clinic, I provide virtual consultations to bridge this gap, empowering patients with accurate diagnoses, globally aligned treatment strategies, and compassionate guidance—all from the comfort of their homes.</p>
+            </div>
+
+            <div class="commitment">
+                <h2>My Commitment to You</h2>
+                <ul>
+                    <li><strong>No patient is just a case:</strong> I believe in holistic care that addresses both physical and emotional well-being.</li>
+                    <li><strong>Clarity & Transparency:</strong> I simplify complex medical jargon, ensuring you understand your condition and options.</li>
+                    <li><strong>Local Support:</strong> I collaborate with trusted hospitals and specialists in Pakistan to help you access quality care near your doorstep.</li>
+                </ul>
+            </div>
+
+            <div class="cta-section">
+                <h2>Let's Navigate Your Journey Together</h2>
+                <p>Whether you seek a second opinion, a detailed treatment plan, or guidance on managing advanced cancer, I am here to walk alongside you with expertise and empathy.</p>
+                <a href="contact.html" class="cta-button">Book Your Virtual Consultation</a>
             </div>
         </section>
     </main>
@@ -121,5 +128,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/translations.js"></script>
 </body>
 </html> 
