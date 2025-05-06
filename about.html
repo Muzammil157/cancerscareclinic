@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Cancer Care Clinic</title>
+    <title data-translate="about-title">About Us - Cancer Care Clinic</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,14 +12,16 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>Cancer Care Clinic</h1>
+                <a href="index.html">
+                    <h1>Cancer Care Clinic</h1>
+                </a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="why-us.html">Why Us?</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-translate="home">Home</a></li>
+                <li><a href="about.html" class="active" data-translate="about-us">About Us</a></li>
+                <li><a href="services.html" data-translate="our-services">Services</a></li>
+                <li><a href="why-us.html" data-translate="why-us">Why Us?</a></li>
+                <li><a href="contact.html" data-translate="contact-us">Contact</a></li>
                 <li class="lang-selector">
                     <select id="headerLangSelect" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
@@ -38,8 +40,8 @@
     <main>
         <section class="about-hero">
             <div class="hero-content">
-                <h1>About Dr. Saeed ur Rehman</h1>
-                <p>Specialist in Medical Oncology | Compassionate Cancer Care Advocate</p>
+                <h1 data-translate="about-title">About Dr. Saeed ur Rehman</h1>
+                <p data-translate="about-subtitle">Specialist in Medical Oncology | Compassionate Cancer Care Advocate</p>
             </div>
         </section>
 
@@ -97,24 +99,31 @@
         </section>
     </main>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/447459588974" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Contact Us</h3>
+                <h3 data-translate="contact-us">Contact Us</h3>
                 <p>123 Medical Center Drive</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Email: info@cancercareclinic.com</p>
+                <p>Phone: +44 7459 588974</p>
+                <a href="https://wa.me/447459588974" class="whatsapp-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
             </div>
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h3 data-translate="quick-links">Quick Links</h3>
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html" data-translate="about-us">About Us</a></li>
+                    <li><a href="services.html" data-translate="our-services">Services</a></li>
+                    <li><a href="contact.html" data-translate="contact-us">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Follow Us</h3>
+                <h3 data-translate="follow-us">Follow Us</h3>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -123,7 +132,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Cancer Care Clinic. All rights reserved.</p>
+            <p data-translate="copyright">&copy; 2024 Cancer Care Clinic. All rights reserved.</p>
         </div>
     </footer>
 

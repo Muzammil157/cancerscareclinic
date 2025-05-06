@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cancer Care Clinic - Contact Us</title>
+    <title data-translate="contact-title">Contact Us - Cancer Care Clinic</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h1>Cancer Care Clinic</h1>
+                <a href="index.html">
+                    <h1>Cancer Care Clinic</h1>
+                </a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="why-us.html">Why Us?</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="index.html" data-translate="home">Home</a></li>
+                <li><a href="about.html" data-translate="about-us">About Us</a></li>
+                <li><a href="services.html" data-translate="our-services">Services</a></li>
+                <li><a href="why-us.html" data-translate="why-us">Why Us?</a></li>
+                <li><a href="contact.html" data-translate="contact-us" class="active">Contact</a></li>
+                <li class="lang-selector">
+                    <select id="headerLangSelect" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ur">اردو</option>
+                    </select>
+                </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -30,115 +39,67 @@
 
     <main>
         <section class="contact-hero">
-            <div class="contact-hero-content">
-                <h1>Contact Us</h1>
-                <p>We're here to help and answer any questions you may have</p>
+            <div class="hero-content">
+                <h1 data-translate="contact-title">Contact Us</h1>
+                <p data-translate="contact-subtitle">Get in Touch for Expert Cancer Care</p>
             </div>
         </section>
 
-        <section class="contact-content">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Get in Touch</h2>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Address</h3>
-                            <p>123 Medical Center Drive<br>City, State 12345</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>Main: (555) 123-4567<br>Appointments: (555) 123-4568</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>General: info@cancercareclinic.com<br>Appointments: appointments@cancercareclinic.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>Hours</h3>
-                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 1:00 PM<br>Sunday: Closed</p>
-                        </div>
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Connect with Us</h2>
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3>WhatsApp Consultation</h3>
+                        <p>Message us directly on WhatsApp for:</p>
+                        <ul>
+                            <li>Virtual consultations</li>
+                            <li>Appointment scheduling</li>
+                            <li>Quick queries</li>
+                            <li>Emergency support</li>
+                        </ul>
+                        <a href="https://wa.me/447459588974" class="whatsapp-button" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
                     </div>
                 </div>
-
-                <div class="contact-form">
-                    <h2>Send Us a Message</h2>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="appointment">Appointment Request</option>
-                                <option value="general">General Inquiry</option>
-                                <option value="billing">Billing Question</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="map-section">
-                <h2>Our Location</h2>
-                <div class="map-container">
-                    <!-- Replace with actual Google Maps embed code -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2155710122!2d-73.987844924164!3d40.757985971389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
-                            width="100%" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Response Time</h3>
+                        <p>We aim to respond to all WhatsApp messages within 24 hours. For urgent matters, please indicate in your message.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/447459588974" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>123 Medical Center Drive</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Email: info@cancercareclinic.com</p>
+                <h3 data-translate="contact-us">Contact Us</h3>
+                <p data-translate="medical-center">123 Medical Center Drive</p>
+                <p>Phone: +44 7459 588974</p>
+                <a href="https://wa.me/447459588974" class="whatsapp-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
             </div>
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h3 data-translate="quick-links">Quick Links</h3>
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html" data-translate="about-us">About Us</a></li>
+                    <li><a href="services.html" data-translate="our-services">Services</a></li>
+                    <li><a href="contact.html" data-translate="contact-us">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Follow Us</h3>
+                <h3 data-translate="follow-us">Follow Us</h3>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -147,11 +108,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Cancer Care Clinic. All rights reserved.</p>
+            <p data-translate="copyright">&copy; 2024 Cancer Care Clinic. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="js/translations.js"></script>
 </body>
 </html> 

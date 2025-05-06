@@ -12,14 +12,16 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>Cancer Care Clinic</h1>
+                <a href="index.html">
+                    <h1>Cancer Care Clinic</h1>
+                </a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="why-us.html">Why Us?</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="active" data-translate="home">Home</a></li>
+                <li><a href="about.html" data-translate="about">About Us</a></li>
+                <li><a href="services.html" data-translate="services">Services</a></li>
+                <li><a href="why-us.html" data-translate="why-us">Why Us?</a></li>
+                <li><a href="contact.html" data-translate="contact">Contact</a></li>
                 <li class="lang-selector">
                     <select id="headerLangSelect" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
@@ -39,101 +41,99 @@
         <section class="hero-banner">
             <div class="hero-content-wrapper">
                 <div class="hero-image">
-                    <img src="https://placehold.co/800x800/3498db/ffffff?text=Dr.+Saeed" alt="Dr. Saeed ur Rehman" class="doctor-image">
+                    <img src="/images/dr-saeed-profile.jpeg" alt="Dr. Saeed ur Rehman" class="doctor-image">
                 </div>
                 <div class="hero-text">
-                    <span class="subtitle">VIRTUAL CANCER CARE IN PAKISTAN</span>
-                    <h1>Empowering Patients with Expert Virtual Cancer Care</h1>
+                    <span class="subtitle" data-translate="virtual-cancer-care">VIRTUAL CANCER CARE IN PAKISTAN</span>
+                    <h1 data-translate="empowering-patients">Empowering Patients with Expert Virtual Cancer Care</h1>
                     <div class="description">
-                        <p>At Cancer Care Clinic, we provide virtual consultations to cancer patients across Pakistan, ensuring accurate diagnosis, precise staging, and personalized treatment plans from the comfort of your home.</p>
-                        <p>Our mission is to bridge the gap between world-class cancer care and accessibility, empowering patients to pursue the best treatment options available globally while receiving support locally in Pakistan.</p>
+                        <p data-translate="hero-description-1">At Cancer Care Clinic, we provide virtual consultations to cancer patients across Pakistan, ensuring accurate diagnosis, precise staging, and personalized treatment plans from the comfort of your home.</p>
+                        <p data-translate="hero-description-2">Our mission is to bridge the gap between world-class cancer care and accessibility, empowering patients to pursue the best treatment options available globally while receiving support locally in Pakistan.</p>
                     </div>
-                    <a href="contact.html" class="cta-button">Book Your Virtual Consultation</a>
+                    <a href="contact.html" class="cta-button" data-translate="book-consultation">Book Your Virtual Consultation</a>
                 </div>
             </div>
         </section>
 
         <section class="services-overview">
             <div class="section-header">
-                <span class="section-subtitle">HOW WE HELP CANCER PATIENTS</span>
-                <h2>Comprehensive Virtual Cancer Care Services</h2>
+                <span class="section-subtitle" data-translate="how-we-help">HOW WE HELP CANCER PATIENTS</span>
+                <h2 data-translate="comprehensive-services">Comprehensive Virtual Cancer Care Services</h2>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <i class="fas fa-video"></i>
-                    <h3>Expert Virtual Consultations</h3>
-                    <p>Connect with experienced oncologist online for thorough evaluations of your condition. We analyse cancer condition, imaging, and lab results to provide clear, actionable plan and treatment in Pakistan.</p>
+                    <i class="fas fa-user-md"></i>
+                    <h3 data-translate="service-1-title">Expert Virtual Consultations</h3>
+                    <p data-translate="service-1-desc">Connect with experienced oncologist online for thorough evaluations of your condition. We analyse cancer condition, imaging, and lab results to provide clear, actionable plan and treatment in Pakistan.</p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-microscope"></i>
-                    <h3>Comprehensive Diagnosis & Staging</h3>
-                    <p>Receive accurate cancer diagnosis and staging using internationally recognized protocols to guide your treatment journey.</p>
+                    <i class="fas fa-stethoscope"></i>
+                    <h3 data-translate="service-2-title">Comprehensive Diagnosis & Staging</h3>
+                    <p data-translate="service-2-desc">Receive accurate cancer diagnosis and staging using internationally recognized protocols to guide your treatment journey.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-clipboard-list"></i>
-                    <h3>Personalized Treatment Plans</h3>
-                    <p>We create tailored treatment strategies aligned with global standards, including chemotherapy, immunotherapy, targeted treatment, radiation, or surgery recommendations.</p>
+                    <h3 data-translate="service-3-title">Personalized Treatment Plans</h3>
+                    <p data-translate="service-3-desc">We create tailored treatment strategies aligned with global standards, including chemotherapy, immunotherapy, targeted treatment, radiation, or surgery recommendations.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-file-medical"></i>
-                    <h3>Detailed Medical Reports</h3>
-                    <p>Obtain in-depth medical reports for your local healthcare providers, ensuring continuity of care with treatment options and referrals.</p>
+                    <h3 data-translate="service-4-title">Detailed Medical Reports</h3>
+                    <p data-translate="service-4-desc">Obtain in-depth medical reports for your local healthcare providers, ensuring continuity of care with treatment options and referrals.</p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-user-md"></i>
-                    <h3>Advanced Care Planning</h3>
-                    <p>We focus on long-term wellness with follow-up plans, prognosis updates, and palliative care guidance to improve outcomes.</p>
+                    <i class="fas fa-calendar-check"></i>
+                    <h3 data-translate="service-5-title">Advanced Care Planning</h3>
+                    <p data-translate="service-5-desc">We focus on long-term wellness with follow-up plans, prognosis updates, and palliative care guidance to improve outcomes.</p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-comments-medical"></i>
-                    <h3>Second Opinions</h3>
-                    <p>We provide trusted second opinions to help you make informed decisions about your cancer treatment.</p>
+                    <i class="fas fa-comments"></i>
+                    <h3 data-translate="service-6-title">Second Opinions</h3>
+                    <p data-translate="service-6-desc">We provide trusted second opinions to help you make informed decisions about your cancer treatment.</p>
                 </div>
             </div>
         </section>
 
         <section class="why-choose-us">
             <div class="section-header">
-                <span class="section-subtitle">WHY CHOOSE US</span>
-                <h2>Expert Care from Anywhere in Pakistan</h2>
+                <span class="section-subtitle" data-translate="why-choose-us">WHY CHOOSE US</span>
+                <h2 data-translate="expert-care">Expert Care from Anywhere in Pakistan</h2>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <i class="fas fa-globe-asia"></i>
-                    <h3>Accessibility</h3>
-                    <p>No travel required—get expert cancer care from anywhere in Pakistan through secure virtual consultations.</p>
+                    <i class="fas fa-globe"></i>
+                    <h3 data-translate="feature-1-title">Accessibility</h3>
+                    <p data-translate="feature-1-desc">No travel required—get expert cancer care from anywhere in Pakistan through secure virtual consultations.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-hand-holding-dollar"></i>
-                    <h3>Affordability</h3>
-                    <p>Transparent pricing with no hidden costs, making world-class cancer care accessible to more patients.</p>
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3 data-translate="feature-2-title">Affordability</h3>
+                    <p data-translate="feature-2-desc">Transparent pricing with no hidden costs, making world-class cancer care accessible to more patients.</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-certificate"></i>
-                    <h3>Global Standards, Local Care</h3>
-                    <p>We combine cutting-edge international guidelines with deep knowledge of local healthcare resources in Pakistan.</p>
+                    <h3 data-translate="feature-3-title">Global Standards, Local Care</h3>
+                    <p data-translate="feature-3-desc">We combine cutting-edge international guidelines with deep knowledge of local healthcare resources in Pakistan.</p>
                 </div>
             </div>
         </section>
 
         <section class="about-lead-doctor">
             <div class="section-header">
-                <span class="section-subtitle">MEET OUR FOUNDER</span>
-                <h2>Dr. Saeed ur Rehman</h2>
+                <span class="section-subtitle" data-translate="meet-founder">MEET OUR FOUNDER</span>
+                <h2 data-translate="dr-saeed-title">Dr. Saeed ur Rehman</h2>
+                <p class="section-subtitle" data-translate="dr-saeed-subtitle">Specialist in Medical Oncology | Compassionate Cancer Care Advocate</p>
             </div>
             <div class="doctor-profile-content">
                 <div class="profile-image">
-                    <img src="https://placehold.co/600x800/3498db/ffffff?text=Dr.+Saeed" alt="Dr. Saeed ur Rehman">
+                    <img src="/images/dr-saeed-profile.jpeg" alt="Dr. Saeed ur Rehman">
                 </div>
                 <div class="profile-info">
-                    <h3>Specialist in Medical Oncology | Compassionate Cancer Care Advocate</h3>
-                    <div class="current-position">
-                        <h4>Current Position</h4>
-                        <p>Specialty Doctor in Medical Oncology at James Cook University Hospital, Middlesbrough, United Kingdom</p>
-                    </div>
+                    <h3 data-translate="current-position">Current Position</h3>
+                    <p data-translate="current-position-desc">Specialty Doctor in Medical Oncology at James Cook University Hospital, Middlesbrough, United Kingdom</p>
                     <div class="expertise">
-                        <h4>Professional Expertise</h4>
-                        <p>Over 14 years of dedicated experience in medical oncology, specializing in:</p>
+                        <h4 data-translate="professional-expertise">Professional Expertise</h4>
+                        <p data-translate="expertise-desc">Over 14 years of dedicated experience in medical oncology, specializing in:</p>
                         <ul>
                             <li>Lung Cancer</li>
                             <li>Breast Cancer</li>
@@ -144,7 +144,7 @@
                         </ul>
                     </div>
                     <div class="qualifications">
-                        <h4>Qualifications & Credentials</h4>
+                        <h4 data-translate="qualifications">Qualifications & Credentials</h4>
                         <ul>
                             <li>Specialty Certificate Examination (SCE) in Medical Oncology (UK)</li>
                             <li>Saudi Fellowship in Medical Oncology</li>
@@ -155,8 +155,8 @@
                         </ul>
                     </div>
                     <div class="commitment">
-                        <h4>Why I Founded Cancer Care Clinic</h4>
-                        <p>While working in the UK's advanced healthcare system, I recognized the urgent need to extend world-class oncology expertise to patients in Pakistan. Through Cancer Care Clinic, I provide virtual consultations to bridge this gap, empowering patients with accurate diagnoses, globally aligned treatment strategies, and compassionate guidance—all from the comfort of their homes.</p>
+                        <h4 data-translate="why-founded">Why I Founded Cancer Care Clinic</h4>
+                        <p data-translate="why-founded-desc">While working in the UK's advanced healthcare system, I recognized the urgent need to extend world-class oncology expertise to patients in Pakistan. Through Cancer Care Clinic, I provide virtual consultations to bridge this gap, empowering patients with accurate diagnoses, globally aligned treatment strategies, and compassionate guidance—all from the comfort of their homes.</p>
                     </div>
                     <a href="contact.html" class="cta-button">Book Your Virtual Consultation</a>
                 </div>
@@ -165,32 +165,32 @@
 
         <section class="doctors-section">
             <div class="section-header">
-                <span class="section-subtitle">OUR TEAM</span>
-                <h2>Meet Our Expert Doctors</h2>
+                <span class="section-subtitle" data-translate="our-team">OUR TEAM</span>
+                <h2 data-translate="meet-experts">Meet Our Expert Doctors</h2>
             </div>
             <div class="doctors-grid">
                 <div class="doctor-card" data-doctor-id="1">
                     <div class="doctor-image">
-                        <img src="https://placehold.co/400x400/3498db/ffffff?text=Dr.+Kalwar" alt="Dr. Sanaullah Kalwar">
+                        <img src="/images/dr-kalwar.png" alt="Dr. Sanaullah Kalwar">
                     </div>
                     <div class="doctor-info">
-                        <h3>Dr. Sanaullah Kalwar</h3>
-                        <p class="doctor-speciality">Consultant Gastroenterologist</p>
-                        <p class="doctor-location">Sukkur, Sindh</p>
-                        <p class="doctor-credentials">MBBS, FCPS (Gastroenterology)</p>
+                        <h3 data-translate="dr-kalwar-title">Dr. Sanaullah Kalwar</h3>
+                        <p data-translate="dr-kalwar-speciality">Consultant Gastroenterologist</p>
+                        <p data-translate="dr-kalwar-location">Sukkur, Sindh</p>
+                        <p data-translate="dr-kalwar-credentials">MBBS, FCPS (Gastroenterology)</p>
                         <button class="view-profile-btn" data-doctor="kalwar">View Profile</button>
                     </div>
                 </div>
 
                 <div class="doctor-card" data-doctor-id="2">
                     <div class="doctor-image">
-                        <img src="https://placehold.co/400x400/3498db/ffffff?text=Dr.+Hussain" alt="Dr. Raiz Hussain">
+                        <img src="/images//dr-hussain.png" alt="Dr. Raiz Hussain">
                     </div>
                     <div class="doctor-info">
-                        <h3>Dr. Raiz Hussain</h3>
-                        <p class="doctor-speciality">Consultant Pulmonologist</p>
-                        <p class="doctor-location">Sukkur, Sindh</p>
-                        <p class="doctor-credentials">MBBS, FCPS (Pulmonary Medicine)</p>
+                        <h3 data-translate="dr-hussain-title">Dr. Raiz Hussain</h3>
+                        <p data-translate="dr-hussain-speciality">Consultant Pulmonologist</p>
+                        <p data-translate="dr-hussain-location">Sukkur, Sindh</p>
+                        <p data-translate="dr-hussain-credentials">MBBS, FCPS (Pulmonary Medicine)</p>
                         <button class="view-profile-btn" data-doctor="hussain">View Profile</button>
                     </div>
                 </div>
@@ -200,24 +200,24 @@
                         <img src="https://placehold.co/400x400/3498db/ffffff?text=Dr.+Ahmed" alt="Dr. Raiz Ahmed">
                     </div>
                     <div class="doctor-info">
-                        <h3>Dr. Raiz Ahmed</h3>
-                        <p class="doctor-speciality">Consultant Gastroenterologist</p>
-                        <p class="doctor-location">Nawabshah, Sindh</p>
-                        <p class="doctor-credentials">MBBS, FCPS (Gastroenterology)</p>
+                        <h3 data-translate="dr-ahmed-title">Dr. Raiz Ahmed</h3>
+                        <p data-translate="dr-ahmed-speciality">Consultant Gastroenterologist</p>
+                        <p data-translate="dr-ahmed-location">Nawabshah, Sindh</p>
+                        <p data-translate="dr-ahmed-credentials">MBBS, FCPS (Gastroenterology)</p>
                         <button class="view-profile-btn" data-doctor="ahmed">View Profile</button>
                     </div>
                 </div>
 
                 <div class="doctor-card" data-doctor-id="4">
                     <div class="doctor-image">
-                        <img src="https://placehold.co/400x400/3498db/ffffff?text=Dr.+Mansoor" alt="Dr. Samina Mansoor">
+                        <img src="/images/dr-mansoor.png" alt="Dr. Samina Mansoor">
                     </div>
                     <div class="doctor-info">
-                        <h3>Dr. Samina Mansoor</h3>
-                        <p class="doctor-speciality">Consultant Breast Oncoplastic Surgeon</p>
-                        <p class="doctor-location">Hyderabad</p>
-                        <p class="doctor-credentials">MBBS, FCPS (General Surgery), FACS (USA)</p>
-                        <p class="doctor-additional">Fellowship in Breast Oncoplastic Surgery (Malaysia)</p>
+                        <h3 data-translate="dr-mansoor-title">Dr. Samina Mansoor</h3>
+                        <p data-translate="dr-mansoor-speciality">Consultant Breast Oncoplastic Surgeon</p>
+                        <p data-translate="dr-mansoor-location">Hyderabad</p>
+                        <p data-translate="dr-mansoor-credentials">MBBS, FCPS (General Surgery), FACS (USA)</p>
+                        <p data-translate="dr-mansoor-additional">Fellowship in Breast Oncoplastic Surgery (Malaysia)</p>
                         <button class="view-profile-btn" data-doctor="mansoor">View Profile</button>
                     </div>
                 </div>
@@ -232,55 +232,53 @@
                     <div class="profile-header">
                         <img src="https://placehold.co/400x400/3498db/ffffff?text=Dr.+Kalwar" alt="Dr. Sanaullah Kalwar">
                         <div class="profile-title">
-                            <h2>Dr. Sanaullah Kalwar</h2>
-                            <p class="credentials">MBBS, FCPS (Gastroenterology)</p>
-                            <p class="speciality">Consultant Gastroenterologist | Sukkur, Sindh</p>
+                            <h2 data-translate="dr-kalwar-title">Dr. Sanaullah Kalwar</h2>
+                            <p class="credentials" data-translate="dr-kalwar-credentials">MBBS, FCPS (Gastroenterology)</p>
+                            <p class="speciality" data-translate="dr-kalwar-speciality">Consultant Gastroenterologist | Sukkur, Sindh</p>
                         </div>
                     </div>
                     <div class="profile-content">
-                        <p class="intro">
-                            As a gastroenterologist, my role is early detection and diagnosis of gastrointestinal (GI) cancers through advanced procedures, ensuring timely referrals to oncologists for life-saving treatment.
-                        </p>
+                        <p class="intro" data-translate="dr-kalwar-intro">As a gastroenterologist, my role is early detection and diagnosis of gastrointestinal (GI) cancers through advanced procedures, ensuring timely referrals to oncologists for life-saving treatment.</p>
                         
-                        <h3>How I Help Diagnose GI Cancers</h3>
+                        <h3 data-translate="how-i-help">How I Help Diagnose GI Cancers</h3>
                         <div class="services-list">
-                            <h4>1. Endoscopy & Biopsy:</h4>
+                            <h4 data-translate="endoscopy-biopsy">1. Endoscopy & Biopsy:</h4>
                             <ul>
-                                <li><strong>Oesophageal & Gastric Cancers:</strong> Directly visualize abnormal growths in the oesophagus/stomach via endoscopy and take tissue samples (biopsy) to confirm cancer.</li>
-                                <li><strong>Colon Cancer:</strong> Detect and remove precancerous polyps during colonoscopy, preventing progression to cancer.</li>
+                                <li data-translate="esophageal-gastric">Oesophageal & Gastric Cancers:</li>
+                                <li data-translate="colon-cancer">Colon Cancer:</li>
                             </ul>
 
-                            <h4>2. ERCP (Endoscopic Retrograde Cholangiopancreatography):</h4>
+                            <h4 data-translate="ercp">2. ERCP (Endoscopic Retrograde Cholangiopancreatography):</h4>
                             <ul>
-                                <li><strong>Pancreatic & Cholangiocarcinoma (Bile Duct) Cancers:</strong> Use ERCP to examine bile/pancreatic ducts, identify blockages/tumors, and collect biopsies or place stents to relieve symptoms.</li>
+                                <li data-translate="pancreatic-bile">Pancreatic & Cholangiocarcinoma (Bile Duct) Cancers:</li>
                             </ul>
 
-                            <h4>3. Liver Disease & Cancer Screening:</h4>
+                            <h4 data-translate="liver-screening">3. Liver Disease & Cancer Screening:</h4>
                             <ul>
-                                <li><strong>Hepatocellular Carcinoma (Liver Cancer):</strong> Monitor high-risk patients (e.g., cirrhosis, hepatitis B/C) with ultrasound, blood tests, and biopsy to catch cancer early.</li>
+                                <li data-translate="hepatocellular">Hepatocellular Carcinoma (Liver Cancer):</li>
                             </ul>
                         </div>
 
-                        <h3>Why Early Diagnosis Matters</h3>
-                        <p>GI cancers often show no symptoms until advanced stages. My role is to:</p>
+                        <h3 data-translate="early-diagnosis">Why Early Diagnosis Matters</h3>
+                        <p data-translate="gi-cancers">GI cancers often show no symptoms until advanced stages. My role is to:</p>
                         <ul>
-                            <li>Spot subtle warning signs (e.g., weight loss, jaundice, bleeding)</li>
-                            <li>Use targeted tests to confirm cancer quickly</li>
-                            <li>Refer you promptly to a medical oncologist (cancer specialist) to start chemotherapy, immunotherapy, or other treatments</li>
+                            <li data-translate="spot-signs">Spot subtle warning signs (e.g., weight loss, jaundice, bleeding)</li>
+                            <li data-translate="quick-tests">Use targeted tests to confirm cancer quickly</li>
+                            <li data-translate="refer-oncologist">Refer you promptly to a medical oncologist (cancer specialist) to start chemotherapy, immunotherapy, or other treatments</li>
                         </ul>
 
-                        <h3>Working Together for Better Outcomes</h3>
+                        <h3 data-translate="team-approach">Working Together for Better Outcomes</h3>
                         <ul>
-                            <li><strong>Team Approach:</strong> I collaborate closely with oncologists, surgeons, and radiologists to ensure seamless care.</li>
-                            <li><strong>Your Next Steps:</strong> If cancer is diagnosed, I guide you to trusted specialists and explain your diagnosis in simple terms.</li>
+                            <li data-translate="team-collaboration">Team Approach:</li>
+                            <li data-translate="next-steps">Your Next Steps:</li>
                         </ul>
 
                         <div class="warning-note">
-                            <h3>Early Detection Saves Lives</h3>
-                            <p>Don't ignore persistent digestive symptoms like persistent vomiting, abdominal pain, jaundice, altered bowel habits, rectal bleeding and weight loss – schedule a consultation today.</p>
+                            <h3 data-translate="early-detection">Early Detection Saves Lives</h3>
+                            <p data-translate="ignore-symptoms">Don't ignore persistent digestive symptoms like persistent vomiting, abdominal pain, jaundice, altered bowel habits, rectal bleeding and weight loss – schedule a consultation today.</p>
                         </div>
 
-                        <button class="book-appointment-btn">Book an Appointment</button>
+                        <button class="book-appointment-btn" data-translate="book-appointment">Book an Appointment</button>
                     </div>
                 </div>
 
@@ -288,9 +286,9 @@
                     <div class="profile-header">
                         <img src="https://placehold.co/400x400/3498db/ffffff?text=Dr.+Hussain" alt="Dr. Raiz Hussain">
                         <div class="profile-title">
-                            <h2>Dr. Raiz Hussain</h2>
-                            <p class="credentials">MBBS, FCPS (Pulmonary Medicine)</p>
-                            <p class="speciality">Consultant Pulmonologist | Sukkur, Sindh</p>
+                            <h2 data-translate="dr-hussain-title">Dr. Raiz Hussain</h2>
+                            <p class="credentials" data-translate="dr-hussain-credentials">MBBS, FCPS (Pulmonary Medicine)</p>
+                            <p class="speciality" data-translate="dr-hussain-speciality">Consultant Pulmonologist | Sukkur, Sindh</p>
                         </div>
                     </div>
                     <div class="profile-content">
@@ -298,7 +296,7 @@
                             As a pulmonologist, my role is detecting lung cancer early and guiding patients to oncologists for timely, life-saving treatment.
                         </p>
                         
-                        <h3>How I Help Diagnose Lung Cancer</h3>
+                        <h3 data-translate="how-i-help">How I Help Diagnose Lung Cancer</h3>
                         <div class="services-list">
                             <h4>1. Advanced Imaging & Scans:</h4>
                             <ul>
@@ -319,7 +317,7 @@
                             </ul>
                         </div>
 
-                        <h3>Why Early Diagnosis Matters</h3>
+                        <h3 data-translate="early-diagnosis">Why Early Diagnosis Matters</h3>
                         <p>Lung cancer often causes no symptoms until advanced stages. My role is to:</p>
                         <ul>
                             <li>Investigate warning signs like persistent cough, blood in sputum, chest pain, shortness of breath, or unexplained weight loss</li>
@@ -327,14 +325,14 @@
                             <li>Connect you to specialists for personalized treatment</li>
                         </ul>
 
-                        <h3>Working Together for Better Outcomes</h3>
+                        <h3 data-translate="team-approach">Working Together for Better Outcomes</h3>
                         <ul>
-                            <li><strong>Team Approach:</strong> I collaborate with oncologists, radiologists, and surgeons to ensure seamless care</li>
-                            <li><strong>Your Next Steps:</strong> If diagnosed, I explain your results clearly and guide you to trusted cancer experts</li>
+                            <li data-translate="team-collaboration">Team Approach:</li>
+                            <li data-translate="next-steps">Your Next Steps:</li>
                         </ul>
 
                         <div class="warning-note">
-                            <h3>Early Detection Saves Lives</h3>
+                            <h3 data-translate="early-detection">Early Detection Saves Lives</h3>
                             <p>Don't ignore lingering respiratory symptoms – schedule a consultation today.</p>
                         </div>
 
@@ -346,9 +344,9 @@
                     <div class="profile-header">
                         <img src="https://placehold.co/400x400/3498db/ffffff?text=Dr.+Ahmed" alt="Dr. Raiz Ahmed">
                         <div class="profile-title">
-                            <h2>Dr. Raiz Ahmed</h2>
-                            <p class="credentials">MBBS, FCPS (Gastroenterology)</p>
-                            <p class="speciality">Consultant Gastroenterologist | Nawabshah, Sindh</p>
+                            <h2 data-translate="dr-ahmed-title">Dr. Raiz Ahmed</h2>
+                            <p class="credentials" data-translate="dr-ahmed-credentials">MBBS, FCPS (Gastroenterology)</p>
+                            <p class="speciality" data-translate="dr-ahmed-speciality">Consultant Gastroenterologist | Nawabshah, Sindh</p>
                         </div>
                     </div>
                     <div class="profile-content">
@@ -356,42 +354,42 @@
                             As a gastroenterologist, my role is early detection and diagnosis of gastrointestinal (GI) cancers through advanced procedures, ensuring timely referrals to oncologists for life-saving treatment.
                         </p>
                         
-                        <h3>How I Help Diagnose GI Cancers</h3>
+                        <h3 data-translate="how-i-help">How I Help Diagnose GI Cancers</h3>
                         <div class="services-list">
-                            <h4>1. Endoscopy & Biopsy:</h4>
+                            <h4 data-translate="endoscopy-biopsy">1. Endoscopy & Biopsy:</h4>
                             <ul>
-                                <li><strong>Oesophageal & Gastric Cancers:</strong> Directly visualize abnormal growths in the oesophagus/stomach via endoscopy and take tissue samples (biopsy) to confirm cancer.</li>
-                                <li><strong>Colon Cancer:</strong> Detect and remove precancerous polyps during colonoscopy, preventing progression to cancer.</li>
+                                <li data-translate="esophageal-gastric">Oesophageal & Gastric Cancers:</li>
+                                <li data-translate="colon-cancer">Colon Cancer:</li>
                             </ul>
 
-                            <h4>2. ERCP (Endoscopic Retrograde Cholangiopancreatography):</h4>
+                            <h4 data-translate="ercp">2. ERCP (Endoscopic Retrograde Cholangiopancreatography):</h4>
                             <ul>
-                                <li><strong>Pancreatic & Cholangiocarcinoma (Bile Duct) Cancers:</strong> Use ERCP to examine bile/pancreatic ducts, identify blockages/tumors, and collect biopsies or place stents to relieve symptoms.</li>
+                                <li data-translate="pancreatic-bile">Pancreatic & Cholangiocarcinoma (Bile Duct) Cancers:</li>
                             </ul>
 
-                            <h4>3. Liver Disease & Cancer Screening:</h4>
+                            <h4 data-translate="liver-screening">3. Liver Disease & Cancer Screening:</h4>
                             <ul>
-                                <li><strong>Hepatocellular Carcinoma (Liver Cancer):</strong> Monitor high-risk patients (e.g., cirrhosis, hepatitis B/C) with ultrasound, blood tests, and biopsy to catch cancer early.</li>
+                                <li data-translate="hepatocellular">Hepatocellular Carcinoma (Liver Cancer):</li>
                             </ul>
                         </div>
 
-                        <h3>Why Early Diagnosis Matters</h3>
-                        <p>GI cancers often show no symptoms until advanced stages. My role is to:</p>
+                        <h3 data-translate="early-diagnosis">Why Early Diagnosis Matters</h3>
+                        <p data-translate="gi-cancers">GI cancers often show no symptoms until advanced stages. My role is to:</p>
                         <ul>
-                            <li>Spot subtle warning signs (e.g., weight loss, jaundice, bleeding)</li>
-                            <li>Use targeted tests to confirm cancer quickly</li>
-                            <li>Refer you promptly to a medical oncologist (cancer specialist) to start chemotherapy, immunotherapy, or other treatments</li>
+                            <li data-translate="spot-signs">Spot subtle warning signs (e.g., weight loss, jaundice, bleeding)</li>
+                            <li data-translate="quick-tests">Use targeted tests to confirm cancer quickly</li>
+                            <li data-translate="refer-oncologist">Refer you promptly to a medical oncologist (cancer specialist) to start chemotherapy, immunotherapy, or other treatments</li>
                         </ul>
 
-                        <h3>Working Together for Better Outcomes</h3>
+                        <h3 data-translate="team-approach">Working Together for Better Outcomes</h3>
                         <ul>
-                            <li><strong>Team Approach:</strong> I collaborate closely with oncologists, surgeons, and radiologists to ensure seamless care.</li>
-                            <li><strong>Your Next Steps:</strong> If cancer is diagnosed, I guide you to trusted specialists and explain your diagnosis in simple terms.</li>
+                            <li data-translate="team-collaboration">Team Approach:</li>
+                            <li data-translate="next-steps">Your Next Steps:</li>
                         </ul>
 
                         <div class="warning-note">
-                            <h3>Early Detection Saves Lives</h3>
-                            <p>Don't ignore persistent digestive symptoms like persistent vomiting, abdominal pain, jaundice, altered bowel habits, rectal bleeding and weight loss – schedule a consultation today.</p>
+                            <h3 data-translate="early-detection">Early Detection Saves Lives</h3>
+                            <p data-translate="ignore-symptoms">Don't ignore persistent digestive symptoms like persistent vomiting, abdominal pain, jaundice, altered bowel habits, rectal bleeding and weight loss – schedule a consultation today.</p>
                         </div>
 
                         <button class="book-appointment-btn">Book an Appointment</button>
@@ -402,10 +400,10 @@
                     <div class="profile-header">
                         <img src="https://placehold.co/400x400/3498db/ffffff?text=Dr.+Mansoor" alt="Dr. Samina Mansoor">
                         <div class="profile-title">
-                            <h2>Dr. Samina Mansoor</h2>
-                            <p class="credentials">MBBS, FCPS (General Surgery), FACS (USA)</p>
-                            <p class="additional-credentials">Fellowship in Breast Oncoplastic Surgery (Malaysia)</p>
-                            <p class="speciality">Consultant Breast Oncoplastic Surgeon | Hyderabad</p>
+                            <h2 data-translate="dr-mansoor-title">Dr. Samina Mansoor</h2>
+                            <p class="credentials" data-translate="dr-mansoor-credentials">MBBS, FCPS (General Surgery), FACS (USA)</p>
+                            <p class="additional-credentials" data-translate="dr-mansoor-additional">Fellowship in Breast Oncoplastic Surgery (Malaysia)</p>
+                            <p class="speciality" data-translate="dr-mansoor-speciality">Consultant Breast Oncoplastic Surgeon | Hyderabad</p>
                         </div>
                     </div>
                     <div class="profile-content">
@@ -413,7 +411,7 @@
                             As a breast oncoplastic surgeon, I specialize in treating breast cancer with precision, combining tumour removal and aesthetic reconstruction, while coordinating care with oncologists for holistic treatment.
                         </p>
                         
-                        <h3>How I Help Diagnose & Treat Breast Cancer</h3>
+                        <h3 data-translate="how-i-help">How I Help Diagnose & Treat Breast Cancer</h3>
                         <div class="services-list">
                             <h4>1. Early Detection:</h4>
                             <ul>
@@ -436,21 +434,21 @@
                             </ul>
                         </div>
 
-                        <h3>Teamwork for Complete Care</h3>
+                        <h3 data-translate="teamwork">Teamwork for Complete Care</h3>
                         <ul>
-                            <li><strong>Referral to Medical Oncologists:</strong> Pre- and Post-surgery, I coordinate with Medical Oncologist (Cancer specialist) to plan chemotherapy, hormone therapy, or immunotherapy</li>
-                            <li><strong>Personalized Follow-Up:</strong> Monitor recovery and collaborate with Medical Oncologist (Cancer specialist) for adjuvant therapies if needed</li>
+                            <li data-translate="referral">Referral to Medical Oncologists:</li>
+                            <li data-translate="personalized">Personalized Follow-Up:</li>
                         </ul>
 
-                        <h3>Why Choose Oncoplastic Surgery?</h3>
+                        <h3 data-translate="why-choose">Why Choose Oncoplastic Surgery?</h3>
                         <ul>
                             <li>Dual Focus: Prioritize cancer eradication and preserving your confidence through reconstruction</li>
                             <li>Early Action: Treating breast cancer at initial stages improves survival and reduces aggressive interventions</li>
                         </ul>
 
                         <div class="warning-note">
-                            <h3>Early Detection Saves Lives</h3>
-                            <p>If you notice a lump/mass or breast swelling, skin changes, or nipple discharge, seek expert care without delay.</p>
+                            <h3 data-translate="early-detection">Early Detection Saves Lives</h3>
+                            <p data-translate="if-notice">If you notice a lump/mass or breast swelling, skin changes, or nipple discharge, seek expert care without delay.</p>
                         </div>
 
                         <button class="book-appointment-btn">Book a Consultation Today</button>
@@ -461,8 +459,8 @@
 
         <section class="testimonials">
             <div class="testimonial-inner">
-                <span class="testimonial-section-title">TESTIMONIALS</span>
-                <h2 class="testimonial-heading">What Our Clients Say</h2>
+                <span class="testimonial-section-title" data-translate="testimonials">TESTIMONIALS</span>
+                <h2 class="testimonial-heading" data-translate="what-clients-say">What Our Clients Say</h2>
                 <div class="testimonial-quote">
                     <p>"I have been under Dr Mansy's care for five years and have always found him to be very caring and responsive to any concern I raised. I believe he seeks to understand the individual personality of his patients under his care and treats them with sensitivity. I am of the view that he "goes the extra mile" for his patients."</p>
                     <p>I was seen at the Friarage Hospital. Supporting staff were also helpful including secretarial staff at James Cook.</p>
@@ -476,50 +474,50 @@
 
         <section class="for-families">
             <div class="section-header">
-                <span class="section-subtitle">SUPPORT SYSTEM</span>
-                <h2>For Families & Caregivers</h2>
+                <span class="section-subtitle" data-translate="support-system">SUPPORT SYSTEM</span>
+                <h2 data-translate="for-families">For Families & Caregivers</h2>
             </div>
             <div class="family-support-content">
-                <p>We educate and involve families in care decisions, offering resources to help you support your loved ones effectively.</p>
-                <a href="contact.html" class="cta-button">Get Support Resources</a>
+                <p data-translate="family-support-desc">We educate and involve families in care decisions, offering resources to help you support your loved ones effectively.</p>
+                <a href="contact.html" class="cta-button" data-translate="get-support">Get Support Resources</a>
             </div>
         </section>
     </main>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/447459588974" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>123 Medical Center Drive</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Email: info@cancercareclinic.com</p>
+                <h3 data-translate="contact-us">Contact Us</h3>
+                <p data-translate="medical-center">123 Medical Center Drive</p>
+                <p><span data-translate="phone">Phone:</span> +44 7459 588974</p>
+                <a href="https://wa.me/447459588974" class="whatsapp-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
             </div>
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h3 data-translate="quick-links">Quick Links</h3>
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html" data-translate="about-us">About Us</a></li>
+                    <li><a href="services.html" data-translate="our-services">Our Services</a></li>
+                    <li><a href="contact.html" data-translate="contact-us">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Follow Us</h3>
+                <h3 data-translate="follow-us">Follow Us</h3>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <div class="footer-lang-selector">
-                    <label for="footerLangSelect">Language:</label>
-                    <select id="footerLangSelect" onchange="changeLanguage(this.value)">
-                        <option value="en">English</option>
-                        <option value="ur">اردو</option>
-                    </select>
-                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Cancer Care Clinic. All rights reserved.</p>
+            <p data-translate="copyright">© 2024 Cancer Care Clinic. All rights reserved.</p>
         </div>
     </footer>
 
